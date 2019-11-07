@@ -1,0 +1,803 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Test Announcement</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- CSS Reset : BEGIN -->
+<style>
+html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+}
+/* iPhone 6+, 7+, and 8+ */
+@media only screen and (min-device-width: 414px) {
+    u ~ div .email-container {
+        min-width: 414px !important;
+    }
+}
+</style>
+
+<!-- CSS Reset : END -->
+
+<!-- Progressive Enhancements : BEGIN -->
+<style>
+  .primary{
+	background: #4E8E8E;
+}
+.bg_white{
+	background: #ffffff;
+}
+.bg_light{
+	background: #fafafa;
+}
+.bg_black{
+	background: #000000;
+}
+.bg_dark{
+	background: rgba(0,0,0,.8);
+}
+.email-section{
+	padding:2.5em;
+}
+/*BUTTON*/
+.btn{
+	padding: 5px 15px;
+	display: inline-block;
+}
+.btn.btn-primary{
+	border-radius: 5px;
+	background: #0d0cb5;
+	color: #ffffff;
+}
+.btn.btn-white{
+	border-radius: 5px;
+	background: #ffffff;
+	color: #000000;
+}
+.btn.btn-white-outline{
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+	margin-top: 0;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: rgba(0,0,0,.4);
+}
+a{
+	color: #0d0cb5;
+}
+table{
+}
+/*LOGO*/
+.logo h1{
+	margin: 0;
+}
+.logo h1 a{
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.navigation{
+	padding: 0;
+}
+.navigation li{
+	list-style: none;
+	display: inline-block;;
+	margin-left: 5px;
+	font-size: 13px;
+	font-weight: 500;
+}
+.navigation li a{
+	color: rgba(0,0,0,.4);
+}
+/*HERO*/
+.hero{
+	position: relative;
+	z-index: 0;
+}
+.hero .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .3;
+}
+.hero .icon{
+}
+.hero .icon a{
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+}
+.hero .text{
+	color: rgba(255,255,255,.8);
+}
+.hero .text h2{
+	color: #ffffff;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+/*HEADING SECTION*/
+.heading-section{
+}
+.heading-section h2{
+	color: #000000;
+	font-size: 20px;
+	margin-top: 0;
+	line-height: 1.4;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.heading-section .subheading{
+	margin-bottom: 20px !important;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,.4);
+	position: relative;
+}
+.heading-section .subheading::after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #0d0cb5;
+	margin: 0 auto;
+}
+.heading-section-white{
+	color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+	font-family: 
+	line-height: 1;
+	padding-bottom: 0;
+}
+.heading-section-white h2{
+	color: #ffffff;
+}
+.heading-section-white .subheading{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.4);
+}
+.icon{
+	text-align: center;
+}
+.icon img{
+}
+/*SERVICES*/
+.services{
+	background: rgba(0,0,0,.03);
+}
+.text-services{
+	padding: 10px 10px 0; 
+	text-align: center;
+}
+.text-services h3{
+	font-size: 16px;
+	font-weight: 600;
+}
+.services-list{
+	padding: 0;
+	margin: 0 0 20px 0;
+	width: 100%;
+	float: left;
+}
+.services-list img{
+	float: left;
+}
+.services-list .text{
+	width: calc(100% - 60px);
+	float: right;
+}
+.services-list h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.services-list p{
+	margin: 0;
+}
+/*BLOG*/
+.text-services .meta{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+/*TESTIMONY*/
+.text-testimony .name{
+	margin: 0;
+}
+.text-testimony .position{
+	color: rgba(0,0,0,.3);
+}
+/*VIDEO*/
+.img{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.img .icon{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: -25px;
+}
+.img .icon a{
+	display: block;
+	width: 60px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+/*COUNTER*/
+.counter{
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+.counter .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .3;
+}
+.counter-text{
+	text-align: center;
+}
+.counter-text .num{
+	display: block;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+}
+.counter-text .name{
+	display: block;
+	color: rgba(255,255,255,.9);
+	font-size: 13px;
+}
+/*FOOTER*/
+.footer{
+	color: rgba(255,255,255,.5);
+}
+.footer .heading{
+	color: #ffffff;
+	font-size: 20px;
+}
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+.footer ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.footer ul li a{
+	color: rgba(255,255,255,1);
+}
+@media screen and (max-width: 500px) {
+	.icon{
+		text-align: left;
+	}
+	.text-services{
+		padding-left: 0;
+		padding-right: 20px;
+		text-align: left;
+	}
+}
+</style>
+
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
+	<center style="width: 100%; background-color: #f1f1f1;">
+    <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+    	<!-- BEGIN BODY -->
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td valign="top" class="bg_white" style="padding: 1em 2.5em;">
+          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          		<tr>
+          			<td width="80%" class="logo" style="text-align: left;">
+			            <h1>PK Test Announcement</h1>
+			          </td>
+			          <td width="30%" class="logo" style="text-align: right;">
+			            <img src="https://github.com/pgevers/publicimages/blob/master/811220_2FiQRn7H6WA6oK8sPUCD5k50M.jpg?raw=true" width="80%">
+			          </td>
+          		</tr>
+          	</table>
+          </td>
+	      </tr><!-- end tr -->
+				 <tr>
+          <td valign="middle" class="hero bg_white" style="background-image: url(https://github.com/pgevers/publicimages/blob/master/usertesting.jpg?raw=true); background-size: cover; height: 200px;">
+          	<div class="overlay"></div>
+            <table>
+            	<tr>
+            		<td>
+            			<div class="text" style="padding: 0 3em; text-align: center;">
+            				<h2>Testing Announcement</h2>
+            				<p>PK recently launched a test on mobile PIPs</p>
+            				
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+				 <tr>
+		            <td class="bg_white email-section">
+		            	<div class="heading-section" style="text-align: left; padding: 0 30px;">
+		              	<h2>Stacked YMAN</h2>
+		              	<p>On Monday, PK launched a mobile test showing YMAN product recommendations vertically stacked, instead of on a horizontal scroll. We think this will improve user interaction with the YMAN recommendations, and will improve product discovery.</p><p>We expect users to find more relevant products with less friction, which will ultimately drive improved conversion and RPV.</p>
+		            	</div>
+		            	
+
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr><div class="heading-section" style="text-align: center; padding: 0 30px;">
+		              	<h2>Test Duration: 10/14-10/25</h2>
+		              	<p>(~9 days)</p>
+		            	</div>
+                      <td valign="top" width="50%" >
+                        <table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/blog-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-services" style="text-align: center;">
+								<h3>Control</h3>
+                            	<p class="meta"><span>Horizontal YMAN</span></p>
+                            	<img src="https://github.com/pgevers/publicimages/blob/master/stackedYMAN_control.png?raw=true" alt="" style="width: 100%; max-width: 200px; height: auto; margin: auto; display: block;">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="50%">
+                        <table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/blog-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-services" style="text-align: center;">
+                            	<h3>Variant</h3>
+                            	<p class="meta"><span>Vertical YMAN</span></p>
+                            	<img src="https://github.com/pgevers/publicimages/blob/master/stackedYMAN_var.png?raw=true" alt="" style="width: 100%; max-width: 200px; height: auto; margin: auto; display: block;">
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+				
+	      
+
+	      <tr>
+		      <td class="bg_white">
+		        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+		          <tr>
+		            <td class="bg_light email-section">
+		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+		              	<h2>Hypothesis</h2>
+		              	<p>We believe showing YMAN recommendations in a stacked module on Mobile PIPs will improve user’s ability to engage with YMAN and facilitate product discovery. We believe this will ultimately improve purchase conversion and lift RPV. </p>
+		            	</div>
+		            	
+		            </td>
+		          </tr><!-- end: tr -->
+		          
+		          <tr>
+		            <td class="bg_white email-section">
+		            	<div class="heading-section" style="text-align: left; padding: 0 30px;">
+		              	<h2>Audience</h2>
+		              	<p>Visitors on Mobile PIP with YMAN present</p>
+		              	<ul>
+		              	<li>50% to Control: Horizontal scrolling YMAN</li>
+		              	<li>50% to Test: Vertically stacked YMAN</li>
+		              </ul></div>
+		            
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="top" width="50%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding-top: 20px; padding-right: 10px;">
+                              <a href="#"><img src="images/work-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="50%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding-top: 20px; padding-left: 10px;">
+                              <a href="#"><img src="images/work-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="top" width="50%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding-top: 20px; padding-right: 10px;">
+                              <a href="#"><img src="images/work-3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="50%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding-top: 20px; padding-left: 10px;">
+                              <a href="#"><img src="images/work-4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+				  
+		          <tr>
+		            <td class="bg_light email-section">
+		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+		              	<h2>Our WSI Testing Team</h2>
+		          		</div>
+		            	<table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/person_1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Nathalie Pham</h3>
+                            	<span class="position">Director, Product Analytics</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/person_2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Jarrod Bender</h3>
+                            	<span class="position">West Elm</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="https://github.com/pgevers/publicimages/blob/master/headshot_M.jpg?raw=true" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Peter Gevers</h3>
+                            	<span class="position">Pottery Barn Kids & Teens</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            	<table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/person_1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Rob Palmiotto</h3>
+                            	<span class="position">Williams Sonoma</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/person_2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Cindy Mirsoian</h3>
+                            	<span class="position">Pottery Barn Kids & Teens</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/person_3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Taylor Owen</h3>
+                            	<span class="position">West Elm</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
+		            		<tr>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/person_1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Brice Winkler</h3>
+                            	<span class="position">Pottery Barn</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/person_2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Aaron Slavik</h3>
+                            	<span class="position">WSI Test Kitchen</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="33.333%" style="padding-top: 20px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                              <img src="images/person_3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-testimony" style="text-align: center;">
+                            	<h3 class="name">Jon Howell</h3>
+                            	<span class="position">Pottery Barn</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+		         
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+		          <tr>
+		            <td class="primary email-section" style="text-align:center;">
+		            	<div class="heading-section heading-section-white">
+		              	<h2>Learn more about our testing program</h2>
+		              	<p>Find out more about writing hypothesis and creating a robust test plan.</p>
+		              	<p><a href="#" class="btn btn-white-outline">Learn More</a></p>
+		            	</div>
+		            </td>
+		          </tr><!-- end: tr -->
+		        </table>
+
+		      </td>
+		    </tr><!-- end:tr -->
+      <!-- 1 Column Text + Button : END -->
+      </table>
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td valign="middle" class="bg_black footer email-section">
+            <table>
+            	<tr>
+                <td valign="top" width="60%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-right: 10px;">
+                      	<h3 class="heading">Brand Test Home</h3>
+                      	<ul>
+					                <li><a href="https://confluence.wsgc.com/pages/viewpage.action?pageId=89350197">Pottery Barn</a></li>
+					                <li><a href="https://confluence.wsgc.com/pages/viewpage.action?spaceKey=WEB&title=West+Elm+Testing+Home">West Elm</a></li>
+					                <li><a href="https://confluence.wsgc.com/pages/viewpage.action?pageId=92935066">William Sonoma</a></li>
+					                <li><a href="https://confluence.wsgc.com/pages/viewpage.action?pageId=102806855">Pottery Barn Kids and Teens</a></li>
+					                <li><a href="https://confluence.wsgc.com/display/RJV/Rejuvenation+Testing+Roadmap">Rejuvenation</a></li>
+					              </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                
+                <td valign="top" width="40%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-left: 10px;">
+                      	<h3 class="heading">Useful Resources</h3>
+                      	<ul>
+					                <li><a href="https://confluence.wsgc.com/pages/viewpage.action?pageId=98710899">Standards & Process</a></li>
+					                <li><a href="https://wsiadmin2.sharepoint.com/:x:/s/ProductAnalytics/ESfEnWR-dtJDiSycN9spCH4B58LkYglCbNaWaQfrgXPSuA?rtime=VCWlzt0r10g">Experiment Tracker</a></li>
+					                <li><a href="https://confluence.wsgc.com/display/PdM/Testing+Glossary">Testing Glossary</a></li>
+					                <li><a href="https://confluence.wsgc.com/display/PdM/Experimentation+Hub">Experimentation Hub</a></li>
+			            	<li><a href="https://confluence.wsgc.com/display/PdM/Technology+Tests">Technology Test Hub</a></li>
+					              </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr><!-- end: tr -->
+        <tr>
+        	<td valign="middle" class="bg_black footer email-section">
+        		<table>
+            	<tr>
+                <td valign="top" width="33.333%">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-right: 10px;">
+                      	<p>WSI Product Analaytics Team</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%">
+                </td>
+              </tr>
+            </table>
+        	</td>
+        </tr>
+      </table>
+
+    </div>
+  </center>
+</body>
+</html>
